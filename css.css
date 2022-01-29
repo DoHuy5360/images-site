@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "consolas";
+}
+.container{
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    background-color: cadetblue;
+}
+#root{
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 10px 0;
+}
+/* ? ========================= images */
+.wrap-img{
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    padding: 10px;
+    align-items: center;
+    border-radius: 8px;
+}
+.images{
+    border-radius: inherit;
+    border: 2px solid;
+    object-fit: cover;
+    width:  100%;
+    height: 90%;
+}
+.wrap-img strong{
+    padding-top: 10px;
+    height: 10%;
+}
+.form-send{
+    width: auto;
+    position: relative;
+    display: grid;
+    background-color: lightblue;
+}
+#inp{
+    text-align: center;
+    background-color: cadetblue;
+    font-weight: bold;
+    color: white;
+    padding: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form-send button[type="submit"]{
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+    border-bottom: 1px solid;
+}
+#inp::-webkit-file-upload-button{
+    display: none;
+}
