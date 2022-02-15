@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./myLogo.ico" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Simple & Convenient</title>
+  </head>
+  <body>
     <form class="form-send" action="">
-        <input id="inp" type="file" accept="image/*" multiple required>
+      <input id="inp" type="file" accept="image/*" multiple required />
+      <div class="wrap-btn">
         <button type="submit">Upload</button>
         <p id="process"></p>
+      </div>
     </form>
-    <div class="container">
-        <div id="root"></div>
+    <div class="container" id="top">
+      <div id="root"></div>
     </div>
-    
-</body>
+  </body>
 </html>
 <script src="module.js" type="module"></script>

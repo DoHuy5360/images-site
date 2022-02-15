@@ -41,7 +41,8 @@ add.addEventListener('submit',(e) => {
     var containProcess =  document.getElementById("process");
     UploadTask.on('state-changed', (snapshot)=>{
     const process = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        containProcess.innerHTML = process + "%"
+        containProcess.innerHTML = `${Math.round(process)}%`;
+        containProcess.style.width = `${process}%`;
     },                                                 
     (error) =>{
         alert("error: image not uploaded!");
@@ -65,7 +66,7 @@ onSnapshot(collect,(snapshot) => {
     root.insertAdjacentHTML("afterbegin",
     `
     <div class="wrap-img">
-        <img class="images" src="${doc.data().link}" alt="${doc.id}">
+        <img class="images" src="${doc.data().link}" alt="${doc.id}" draggable="false">
         <strong>${doc.data().name}</strong>
     </div>
     `)
